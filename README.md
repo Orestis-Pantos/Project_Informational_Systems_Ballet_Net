@@ -1,3 +1,9 @@
+This project was created with contributions from:
+ΟΔΥΣΣΕΑΣ ΜΟΥΡΕΛΑΤΟΣ	
+ΘΕΟΧΑΡΗΣ ΑΓΓΕΛΟΣ ΝΑΪΣΙΔΗΣ
+ΤΑΒΟΥΛΑΡΗ ΕΜΜΕΛΕΙΑ
+ΙΩΑΝΝΗΣ ΚΟΛΟΒΑΤΣΙΟΣ
+
 # Ballet Net - Dance School Management System
 
 **Ballet Net** is a responsive frontend prototype designed to streamline the daily operations and communication of a modern dance academy. It provides tailored digital dashboards for different roles within the school, focusing on scheduling, academic progress tracking, and social media content management.
