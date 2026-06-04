@@ -1,0 +1,138 @@
+/* Εισαγωγή Γραμματοσειρών από Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+/* Βασικό Φόντο και Γραμματοσειρές Κειμένου */
+body {
+    background-image: url('../photos/purple_waves.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a, table, input, select {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Γραμματοσειρά Τίτλων */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .modal-title { 
+    font-family: 'Playfair Display', serif; 
+}
+
+/* Χρώματα Ballet Arts (Branding) */
+.text-ballet { color: #8B5A83 !important; }
+.bg-ballet { background-color: #8B5A83 !important; color: white; }
+
+
+.btn-ballet {
+    background-color: #8B5A83;
+    color: white;
+    border: 2px solid #8B5A83;
+    transition: all 0.3s ease;
+}
+.btn-ballet:hover {
+    background-color: white;
+    color: #8B5A83;
+}
+
+.btn-outline-ballet {
+    color: #8B5A83;
+    border: 2px solid #8B5A83;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-ballet:hover {
+    background-color: #8B5A83;
+    color: white;
+}
+
+/* Links Κεντρικού Μενού (Navbar) */
+.text-link {
+    text-decoration: none;
+    color: #6c757d; 
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+}
+.text-link:hover { 
+    color: #8B5A83;
+    text-decoration: underline; 
+}
+
+/* Εφέ για Κάρτες */
+.card { 
+    transition: transform 0.2s; 
+}
+.card:hover { 
+    transform: scale(1.02); 
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    border: none !important;
+    background-color: #ffffff;
+}
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* Εικονίδια & Ειδικά Στοιχεία (Landing Page) */
+.card-icon {
+    font-size: 2.5rem;
+    color: #8B5A83;
+    margin-bottom: 15px;
+}
+.main-content-box {
+    border-radius: 16px;
+}
+
+/* Ειδικά Στοιχεία Media (Approve Content) */
+.blue-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(139, 90, 131, 0.9); /* Μωβ Play Button */
+    color: white;
+    width: 65px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.blue-play-btn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.badge-bottom-left {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: #fff;
+}
+
+/* Custom Tabs (Manage Schedule) */
+.custom-tabs .nav-link {
+    color: #6c757d;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.custom-tabs .nav-link:hover {
+    color: #8B5A83;
+    text-decoration: underline;
+}
+.custom-tabs .nav-link.active {
+    color: #8B5A83;
+    background-color: transparent;
+    border-bottom: 3px solid #8B5A83;
+    font-weight: 700;
+}

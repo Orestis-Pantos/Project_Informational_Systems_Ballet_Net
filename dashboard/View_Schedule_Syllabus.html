@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule & Syllabus - Ballet Net</title>
+    
+    <link rel="icon" type="image/png" href="../photos/BalletArts.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="../css/background_style.css">
+</head>
+
+<body>
+
+    <!-- 1. ΑΛΛΑΓΗ: Το Navbar έγινε Responsive (Hamburger Menu) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 shadow-sm py-2">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand fs-2 fw-bold d-flex align-items-center text-ballet" href="../index.html">
+                <!-- 2. ΑΛΛΑΓΗ: Το λογότυπο μίκρυνε ελαφρώς (από 80 σε 50) για να μην πιάνει όλη την οθόνη του κινητού -->
+                <img src="../photos/BalletArts.png" alt="Ballet Arts Logo" height="50" class="me-3">
+                Ballet Net
+            </a>
+            
+            <!-- Το κουμπί που εμφανίζεται μόνο στα κινητά -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-3 align-items-center mt-3 mt-lg-0">
+                    <a href="Update_Syllabus.html" class="nav-link text-link"> Update Syllabus </a>
+                    <!-- Προστέθηκε το class 'nav-link' για να λειτουργεί σωστά στο κάθετο μενού του κινητού -->
+                    <a href="View_Schedule_Syllabus.html" class="nav-link text-link text-ballet fw-bold" style="border-bottom: 2px solid #8B5A83;"> Schedule & Syllabus </a>
+                    <a href="Approve_Content.html" class="nav-link text-link"> Approve Content </a>
+                    <a href="Manage_Schedule.html" class="nav-link text-link"> Manage Schedule </a>
+                    <a href="../index.html" class="nav-link text-link"> Landing Page </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid px-4 px-lg-5 mt-4 mb-5">
+
+        <div class="alert alert-warning alert-dismissible fade show shadow-sm" role="alert" id="unregisteredAlert" style="border-radius: 12px;">
+            <strong>Προσοχή!</strong> Αν δεν έχετε εγγραφεί επισήμως σε κάποιο τμήμα για το τρέχον έτος, παρακαλούμε επικοινωνήστε με τη <strong>Γραμματεία</strong>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-5 mt-4">
+            <!-- 3. ΑΛΛΑΓΗ: Αφαιρέθηκε το inline font-size: 2.5rem και αντικαταστάθηκε από την κλάση fs-1 του Bootstrap -->
+            <h1 class="fw-bold d-flex align-items-center text-ballet mb-0 fs-1">
+                <img src="../photos/dancer.png" alt="Dancer" height="42" class="me-3 rounded">
+                Εκπαιδευτικός Φάκελος
+            </h1>
+        </div>
+
+        <div class="row g-4 mb-5">
+            
+            <!-- Ωρολόγιο Πρόγραμμα -->
+            <div class="col-lg-7">
+                <div class="card shadow-sm border-0 h-100" style="border-radius: 16px; overflow: hidden;">
+                    <div class="card-header bg-ballet text-white fw-bold fs-5 py-3 border-0">
+                        Το Ωρολόγιο Πρόγραμμά μου
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <!-- Σε πίνακες με πολύ κείμενο (όπως το μάθημα & επίπεδο), το table-responsive θα δημιουργήσει αυτόματα scrollbar στο κινητό, διατηρώντας τον πίνακα τακτοποιημένο. -->
+                            <table class="table table-hover align-middle mb-0 fs-5 text-nowrap">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="py-3 px-4 border-0 text-secondary">Ημέρα</th>
+                                        <th class="py-3 px-3 border-0 text-secondary">Ώρα</th>
+                                        <th class="py-3 px-3 border-0 text-secondary">Αίθουσα</th>
+                                        <th class="py-3 px-3 border-0 text-secondary">Δασκάλα</th>
+                                        <th class="py-3 px-4 border-0 text-secondary">Μάθημα & Επίπεδο</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold text-ballet px-4 py-3">Δευτέρα</td>
+                                        <td class="px-3 py-3">19:00 - 20:30</td>
+                                        <td class="px-3 py-3">Αίθουσα 1</td>
+                                        <td class="px-3 py-3">Μαρία Παππά</td>
+                                        <td class="px-4 py-3">Ballet <br><small class="text-muted">Intermediate Foundation</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold text-ballet px-4 py-3">Τετάρτη</td>
+                                        <td class="px-3 py-3">19:00 - 20:30</td>
+                                        <td class="px-3 py-3">Αίθουσα 1</td>
+                                        <td class="px-3 py-3">Μαρία Παππά</td>
+                                        <td class="px-4 py-3">Ballet <br><small class="text-muted">Advanced Foundation</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold text-ballet px-4 py-3">Πέμπτη</td>
+                                        <td class="px-3 py-3">20:30 - 21:30</td>
+                                        <td class="px-3 py-3">Αίθουσα 2</td>
+                                        <td class="px-3 py-3">Ελένη Γεωργίου</td>
+                                        <td class="px-4 py-3">Ballet <br><small class="text-muted">Intermediate Foundation</small></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Πρόοδος Ύλης -->
+            <div class="col-lg-5">
+                <div class="card shadow-sm border-0 h-100" style="border-radius: 16px; overflow: hidden;">
+                    <div class="card-header bg-ballet text-white fw-bold fs-5 py-3 border-0">
+                        Πρόοδος Ύλης (RAD / ISTD)
+                    </div>
+                    <!-- 4. ΑΛΛΑΓΗ: To p-4 έγινε p-3 p-md-4 για να έχουμε μικρότερα περιθώρια στις οθόνες κινητών. -->
+                    <div class="card-body p-3 p-md-4">
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-bold">Συνολικό Ποσοστό Ολοκλήρωσης</span>
+                                <span class="fw-bold text-success fs-5">45%</span>
+                            </div>
+                            <div class="progress" style="height: 12px; border-radius: 10px; background-color: #e9ecef;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 45%; border-radius: 10px;"
+                                    aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <p class="text-muted small mb-4 lh-base">
+                            Αναλυτική εξέλιξη στη διδακτέα ύλη του τρέχοντος επιπέδου (RAD Intermediate Foundation):
+                        </p>
+
+                        <ul class="list-group list-group-flush border-top">
+                            <li class="list-group-item d-flex justify-content-between align-items-start px-0 py-3 border-bottom">
+                                <div>
+                                    <span class="d-block fw-bold mb-1">Barre Work</span>
+                                    <small class="text-muted">Plié, Tendu & Glissades</small>
+                                </div>
+                                <span class="badge bg-success rounded-pill shadow-sm px-3 py-2 mt-1">100%</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start px-0 py-3 border-bottom">
+                                <div>
+                                    <span class="d-block fw-bold mb-1">Center Work</span>
+                                    <small class="text-muted">Port de Bras & Adagio</small>
+                                </div>
+                                <span class="badge bg-info text-white rounded-pill shadow-sm px-3 py-2 mt-1">60%</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start px-0 py-3 border-bottom">
+                                <div>
+                                    <span class="d-block fw-bold mb-1">Allegro</span>
+                                    <small class="text-muted">Petit Allegro & Grand Allegro</small>
+                                </div>
+                                <span class="badge bg-warning text-dark rounded-pill shadow-sm px-3 py-2 mt-1">20%</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start px-0 py-3 border-bottom-0">
+                                <div>
+                                    <span class="d-block fw-bold mb-1">Pointe Work</span>
+                                    <small class="text-muted">Relevé & Échappé</small>
+                                </div>
+                                <span class="badge bg-secondary rounded-pill shadow-sm px-3 py-2 mt-1">0%</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
