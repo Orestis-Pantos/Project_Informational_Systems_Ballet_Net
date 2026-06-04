@@ -2,7 +2,7 @@ This project was created with contributions from:
 ΟΔΥΣΣΕΑΣ ΜΟΥΡΕΛΑΤΟΣ,	
 ΘΕΟΧΑΡΗΣ ΑΓΓΕΛΟΣ ΝΑΪΣΙΔΗΣ,
 ΤΑΒΟΥΛΑΡΗ ΕΜΜΕΛΕΙΑ,
-ΙΩΑΝΝΗΣ ΚΟΛΟΒΑΤΣΙΟΣ,
+ΙΩΑΝΝΗΣ ΚΟΛΟΒΑΤΣΙΟΣ.
 
 # Ballet Net - Dance School Management System
 
